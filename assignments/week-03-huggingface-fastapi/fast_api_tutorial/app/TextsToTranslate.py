@@ -26,18 +26,9 @@ def index():
 def ping():
     return {"message": "pong"}
 
-<<<<<<< HEAD
-@app.post("/translate")
-# def translate(text_to_translate: TextToTranslate):
-#     return (pipeline(text_to_translate))
-def translate(text_to_translate: TextToTranslate):
-    return (pipeline('Enter Words to Translate'))
-#     return {"message": pipeline(text_to_translate)}
-=======
 @app.post("/echo")
 def echo(text_to_translate: TextToTranslate):
     return {"message": text_to_translate.input_text}
->>>>>>> c38a744412324c85ee35cf00392085813bd2e961
 
 if __name__ == "__main__":
     import uvicorn
