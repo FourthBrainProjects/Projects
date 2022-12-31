@@ -27,8 +27,6 @@ def ping():
     return {"message": "pong"}
 
 @app.post("/translate")
-# def translate(text_to_translate: TextToTranslate):
-#     return (pipeline(text_to_translate))
 def translate(text_to_translate: TextToTranslate):
     return (pipeline('Enter Words to Translate'))
 #     return {"message": pipeline(text_to_translate)}
