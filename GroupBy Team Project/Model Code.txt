@@ -1,0 +1,21 @@
+import causalml
+from causalml.inference.meta import LRSRegressor
+from causalml.datasets import synthetic_uplift_covariates
+
+# Generate synthetic uplift data
+X, y, w = synthetic_uplift_covariates()
+
+# Split the data into training and test sets
+X_train, X_test, y_train, y_test, w_train, w_test = train_test_split(X, y, w)
+
+# Train the uplift model
+model = LRSRegressor()
+model.fit(X_train, y_train, w_train)
+
+# Evaluate the model on the test set
+y_pred = model.predict(X_test)
+qini = model.qini(y_test, y_pred)
+print(f'Qini coefficient: {qini:.3f}')
+
+# Deploy the model in a production environment
+model.deploy(endpoint_name='uplift-model')
