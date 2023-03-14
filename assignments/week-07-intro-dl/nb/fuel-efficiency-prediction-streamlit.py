@@ -8,7 +8,7 @@ from PIL import Image
 # Add and resize an image to the top of the app
 #img_fuel = Image.open("../img/fuel_efficiency.png")
 
-st.image(img_fuel, width=700)
+#st.image(img_fuel, width=700)
 
 st.markdown("<h1 style='text-align: center; color: black;'>Fuel Efficiency</h1>", unsafe_allow_html=True)
 
