@@ -9,7 +9,7 @@
 
 
 
-# <h1 align="center" id="heading">:wave: Welcome to MLE Cohort 11 (December 2022)!</h1>
+# <h1 align="center" id="heading">:wave: Projects from MLE Cohort 11 (December 2022)!</h1>
 A Collection of Assignments & Projects completed at FourthBrain 
 
 Note :tada: Follow steps in [software-dev-for-mlops-101](https://github.com/FourthBrain/software-dev-for-mlops-101) to get started on your environment setup! 
